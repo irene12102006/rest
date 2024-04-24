@@ -1,0 +1,43 @@
+body {
+
+      background-size: cover;
+ background-color: grey; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+     color:#483D8B;
+    } 
+     .post {
+            background-color:white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+h2{
+  color:#C71585;
+}
+
+h1{
+  color:#5F9EA0;
+  font-size:50px;
+  font-family: castellar;
+}
+a {
+    text-decoration: none;
+    color: #3498DB;
+}
+body {
+    font-family:  palatino linotype;
+}
+
+input[type="text"], input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+.titulo1 {
+    text-align: center;
+}
+.titulo2 {
+  text-align: center;
+}
