@@ -215,3 +215,36 @@ Lugar:
 </body>
    </div>
  <br></br>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="post">
+    <h2>FORMULARIO PARA LAS RESERVAS</h2>
+    <form onsubmit="enviarFormulario(); return false;">
+      Cuantas personas son:
+      <input type="text" placeholder="Escribe el número de personas" maxlength="10">
+      <br><br>
+      Nombre:
+      <input type="text" placeholder="Escribe quien lo reserva" maxlength="30">
+      <br><br>
+      Tlf:
+      <input type="text" placeholder="">
+      <br><br>
+      Lugar: 
+      <select name=""id="">
+        <option value="Dentro">Dentro</option>
+        <option value="Terraza">Terraza</option>
+      </select>
+      <br><br>
+      Alergias: 
+      <input type="text" maxlength="300">
+      <br><br>
+      <input type="checkbox" name=""id=""> Quiero que me manden un recordatorio tres días antes.
+      <br><br>
+      <button class="btn success">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
