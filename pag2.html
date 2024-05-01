@@ -54,9 +54,8 @@ input[type="text"], input[type="email"] {
   } 
 </style>
 </head>
-  <div class="post">
-<h2>NUESTRAS RECETAS </h2>
-   
+   <div class="post">
+<h2>NUESTRAS RECETAS </h2>  
 <A href="https://www.youtube.com/watch?v=7LxhPlDqCOo">COCIDO </A></blockquote>
 <br></br>
 <A href="https://www.youtube.com/watch?v=a_3_0rHeFjk">PAELLA </A></blockquote>
@@ -188,44 +187,55 @@ input[type="text"], input[type="email"] {
 <br></br>
  </div>
 
+<div class="post">
+<h2> FORMULARIO PARA LAS RESERVAS</h2>
+<body>
+  <form>
+    Cuantas personas son:
+    <input type="text" placeholder="Escribe el número de personas" maxlength="10">
+    Nombre:
+    <input type="text" placeholder="Escribe quien lo reserva" maxlength="30">
+    Tlf:
+    <input type="text" placeholder="Número de teléfono" maxlength="9">
+    <br></br>
+    Correo electrónico:
+    <input type="text" placeholder="Escribe tu correo" maxlength="30">
+ 
+Lugar: 
+    <select name=""id="">
+      <option value="Dentro">Dentro</option>
+      <option value="Terraza">Terraza</option>
+    </select>
+    Alergias: 
+    <input type="text" placeholder="Escriba si tiene o no alergias" maxlength="300">
+    <br></br>
+    <input type="checkbox" name=""id=""> Quiero que me manden un recordatorio tres días antes.
+    <button class="btn success">Enviar</button>
+  <br></br>
+  <A href="index.html">PÁGINA PRINCIPAL </A>
+  <br></br>
+</body>
+   </div>
+ <br></br>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  <div class="post">
-    <h2>FORMULARIO PARA LAS RESERVAS</h2>
-    <form onsubmit="enviarFormulario(); return false;">
-      Cuantas personas son:
-      <input type="text" placeholder="Escribe el número de personas" maxlength="10">
-      <br><br>
-      Nombre:
-      <input type="text" placeholder="Escribe quien lo reserva" maxlength="30">
-      <br><br>
-      Tlf:
-      <input type="text" placeholder="">
-      <br><br>
-      Lugar: 
-      <select name=""id="">
-        <option value="Dentro">Dentro</option>
-        <option value="Terraza">Terraza</option>
-      </select>
-      <br><br>
-      Alergias: 
-      <input type="text" maxlength="300">
-      <br><br>
-      <input type="checkbox" name=""id=""> Quiero que me manden un recordatorio tres días antes.
-      <br><br>
-      <button class="btn success">Enviar</button>
-      <A href="index.html">PÁGINA PRINCIPAL </A></blockquote>
-  <br></br> 
-      <A href="pag1.html">MENU ENTRE SEMANA </A></blockquote>
-  <br></br>
-       <A href="pag2.html">RECETAS - INGREDIENTES - PRECIOS - RESERVAS </A></blockquote>
- <br></br>
-    </form>
-  </div>
+ <html>
+    <body>
+      <script>
+  
+  const camposTexto = document.querySelectorAll('input[type="text"]');
+    camposTexto.forEach(input => {
+      const contador = document.createElement('span');
+      contador.textContent = `0/${input.maxLength}`;
+      contador.style.marginLeft = '10px';
+      input.parentNode.insertBefore(contador, input.nextSibling);
+      input.addEventListener('input', () => {
+        contador.textContent = `${input.value.length}/${input.maxLength}`;
+      });
+    });
+  </script>
 </body>
 </html>
-
-  
+   
